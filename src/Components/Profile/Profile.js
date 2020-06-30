@@ -143,7 +143,7 @@ class Profile extends Component {
                                         }
                                     </Translation> 
                                     </h6> 
-                                    <li><a href='https://www.w3schools.com/w3css/tryw3css_templates_cv.htm'>https://www.w3schools.com/w3css/tryw3css_templates_cv.htm</a> 
+                                    <li><a href='https://amazing-page.herokuapp.com/index.html'>https://amazing-page.herokuapp.com/index.html</a> 
                                     </li>
                                     <hr />
 
@@ -160,7 +160,7 @@ class Profile extends Component {
                                             t => <span>{t("pig_game")}</span>
                                         }
                                     </Translation>
-                                       </h6> <li><a href='https://www.w3schools.com/w3css/tryw3css_templates_cv.htm'>https://www.w3schools.com/w3css/tryw3css_templates_cv.htm</a> </li>
+                                       </h6> <li><a href='https://dom-pig-game.herokuapp.com/index.html'>https://dom-pig-game.herokuapp.com/index.html</a> </li>
                                     <hr />
 
                                     <h5 className="school">
