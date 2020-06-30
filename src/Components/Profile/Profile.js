@@ -57,7 +57,7 @@ class Profile extends Component {
                                             }
                                         </Translation>
                                     </b></p>
-                                    <div className='skill'>Html</div>
+                                    <div className='skill'>HTML</div>
                                     <Progress percent={80}
                                         strokeColor={{
                                             '0%': 'rgb(245, 159, 0)',
@@ -65,14 +65,14 @@ class Profile extends Component {
                                         }}
                                         strokeWidth={15}
                                         status="active" />
-                                    <div className='skill'>Css - scss</div>
+                                    <div className='skill'>CSS/SCSS</div>
                                     <Progress percent={80} strokeColor={{
                                         '0%': 'rgb(245, 159, 0)',
                                         '100%': 'rgb(245, 159, 0)',
                                     }}
                                         strokeWidth={15} status="active" />
 
-                                    <div className='skill'>Javascript</div>
+                                    <div className='skill'>Javascript (ES6)</div>
                                     <Progress percent={60} strokeColor={{
                                         '0%': 'rgb(245, 159, 0)',
                                         '100%': 'rgb(245, 159, 0)',
@@ -96,20 +96,23 @@ class Profile extends Component {
                                     <hr />
 
                                     <p className="text-lang"><b><FormOutlined style={{ color: 'rgb(245, 159, 0)' }} />
+                                       
                                         <Translation>
                                             {
                                                 t => <span>{t("languages")}</span>
                                             }
                                         </Translation>
-                                    </b></p>
+                                    </b>
+                                    </p>
+                                   <p> <b>Toeic</b> </p>
                                     <Translation>
                                         {
-                                            t => <p>{t("listening")}</p>
+                                            t => <p>{t("listening")} <b>545/990</b> </p>
                                         }
                                     </Translation>
                                     <Translation>
                                         {
-                                            t => <p>{t("speaking")}</p>
+                                            t => <p> {t("speaking")}<b>307/400</b></p>
                                         }
                                     </Translation>
                                     <br />
@@ -143,7 +146,7 @@ class Profile extends Component {
                                         }
                                     </Translation> 
                                     </h6> 
-                                    <li><a href='https://amazing-page.herokuapp.com/index.html'>https://amazing-page.herokuapp.com/index.html</a> 
+                                    <li><a href='https://amazing-page.herokuapp.com' target="_blank">https://amazing-page.herokuapp.com</a> 
                                     </li>
                                     <hr />
 
@@ -160,7 +163,7 @@ class Profile extends Component {
                                             t => <span>{t("pig_game")}</span>
                                         }
                                     </Translation>
-                                       </h6> <li><a href='https://dom-pig-game.herokuapp.com/index.html'>https://dom-pig-game.herokuapp.com/index.html</a> </li>
+                                       </h6> <li><a href='https://dom-pig-game.herokuapp.com' target="_blank">https://dom-pig-game.herokuapp.com</a> </li>
                                     <hr />
 
                                     <h5 className="school">
@@ -191,7 +194,7 @@ class Profile extends Component {
                                         }
                                     </Translation>
                                        </div>
-                                    <li><a href='https://app-manage-student-new.herokuapp.com/project'>https://app-manage-student-new.herokuapp.com/project</a> </li>
+                                    <li><a href='https://app-manage-student-new.herokuapp.com/project' target="_blank">https://app-manage-student-new.herokuapp.com/project</a> </li>
                                 </div>
 
                             </div>
@@ -213,14 +216,8 @@ class Profile extends Component {
                                     </Translation>
                                       </h5>
                                     <h6 className="year"><FieldTimeOutlined style={{ color: 'rgb(245, 159, 0)' }} />2016 - 2020</h6>
-                                    <p className='student'>
-                                    <Translation>
-                                        {
-                                            t => <span>{t("studentMe")}</span>
-                                        }
-                                    </Translation>
-                                       </p>
-                                    <div className='gpa'>GPA: 7.45</div>
+                                    
+                                    <div className='gpa'><b>GPA: 7.45</b> </div>
 
                                 </div>
                             </div>
