@@ -191,7 +191,7 @@ class Profile extends Component {
                                         }
                                     </Translation>
                                        </div>
-                                    <li><a href='http://localhost:3000/project'>http://localhost:3000/project</a> </li>
+                                    <li><a href='https://app-manage-student-new.herokuapp.com/project'>https://app-manage-student-new.herokuapp.com/project</a> </li>
                                 </div>
 
                             </div>
