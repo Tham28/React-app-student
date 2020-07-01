@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import './Header.scss';
 import { Menu, Drawer, Button } from 'antd';
-import { MenuUnfoldOutlined, ProfileOutlined, FundProjectionScreenOutlined } from '@ant-design/icons';
+import { MenuUnfoldOutlined, ProfileOutlined, FundProjectionScreenOutlined, HomeOutlined, SketchOutlined  } from '@ant-design/icons';
 import hat from '../../images/hat-graduate.png';
 import { Translation } from 'react-i18next';
 
@@ -22,7 +22,7 @@ class Header extends Component {
         super(props)
         this.state = {
             visible: false
-          
+
         }
     }
     showDrawerLink = () => {
@@ -38,13 +38,13 @@ class Header extends Component {
     };
 
     handleClickMenu = e => {
-        const {history} = this.props
-        if(history){
+        const { history } = this.props
+        if (history) {
             history.push(e.key)
         }
     };
     render() {
-        const pathName =  window.location.pathname
+        const pathName = window.location.pathname
         return (
             <div className="header">
                 <div className="container">
@@ -54,7 +54,8 @@ class Header extends Component {
                             <MenuUnfoldOutlined />
                         </Button>
                         <Drawer
-                            title="My app"
+                           
+                            title='My app'
                             width={200}
                             // closable={false}
                             onClose={this.onCloseDrawerLink}
@@ -64,41 +65,44 @@ class Header extends Component {
                             <nav>
                                 <ul>
                                     <li>
-                                    <Button>
-                                    <Link to="/">
-                                            <Translation>
-                                                {
-                                                    t => <span>{t("home")}</span>
-                                                }
-                                            </Translation>
-                                        </Link>
-                                    </Button>
+                                        <Button>
+                                            <Link to="/">
+                                            <HomeOutlined />
+                                                <Translation>
+                                                    {
+                                                        t => <span>{t("home")}</span>
+                                                    }
+                                                </Translation>
+                                            </Link>
+                                        </Button>
                                     </li>
                                     <li>
-                                    <Button>
-                                    <Link to="/project">
-                                            <Translation>
-                                                {
-                                                    t => <span>{t("project")}</span>
-                                                }
-                                            </Translation>
-                                        </Link>
-                                    </Button>
-                                        
+                                        <Button>
+                                            <Link to="/project">
+                                                <FundProjectionScreenOutlined />
+                                                <Translation>
+                                                    {
+                                                        t => <span>{t("project")}</span>
+                                                    }
+                                                </Translation>
+                                            </Link>
+                                        </Button>
+
                                     </li>
                                 </ul>
                             </nav>
                         </Drawer>
                     </div>
-                    
+
 
                     <div className="logo">
                         <img className='img-logo' src={hat} alt="" />
+                        {/* <SketchOutlined  style={{ color: 'rgb(245, 159, 0)', width: '50' }} /> */}
                         <div className='my-app'>My app</div>
                     </div>
                     <div className="link-page">
                         <Menu onClick={this.handleClickMenu} selectedKeys={[pathName]} mode="horizontal">
-                            <Menu.Item key='/' icon={<ProfileOutlined />}>
+                            <Menu.Item key='/' icon={<HomeOutlined />}>
                                 <Translation>
                                     {
                                         t => <span>{t("home")}</span>
