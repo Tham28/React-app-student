@@ -22,6 +22,7 @@ class Header extends Component {
         super(props)
         this.state = {
             visible: false
+          
         }
     }
     showDrawerLink = () => {
@@ -53,31 +54,37 @@ class Header extends Component {
                             <MenuUnfoldOutlined />
                         </Button>
                         <Drawer
-                            title="Student manager"
+                            title="My app"
                             width={200}
-                            closable={false}
+                            // closable={false}
                             onClose={this.onCloseDrawerLink}
                             visible={this.state.visible}
+                            placement='left'
                         >
                             <nav>
                                 <ul>
                                     <li>
-                                        <Link to="/">
+                                    <Button>
+                                    <Link to="/">
                                             <Translation>
                                                 {
                                                     t => <span>{t("home")}</span>
                                                 }
                                             </Translation>
                                         </Link>
+                                    </Button>
                                     </li>
                                     <li>
-                                        <Link to="/project">
+                                    <Button>
+                                    <Link to="/project">
                                             <Translation>
                                                 {
                                                     t => <span>{t("project")}</span>
                                                 }
                                             </Translation>
                                         </Link>
+                                    </Button>
+                                        
                                     </li>
                                 </ul>
                             </nav>
