@@ -30,7 +30,7 @@ const resources = {
       'project': 'Project',
       'tham': 'TRAN THI HONG THAM',
       'birthMe': '10 / 28 / 1998',
-      'addressMe': '791/1 Tran Xoan Soan Street, Tan Hung Ward, District 7, Ho Chi Minh City',
+      'addressMe': '791/1 Tran Xuan Soan Street, Tan Hung Ward, District 7, Ho Chi Minh City',
       'skill': 'Skills',
       'languages': 'Languages',
       'listening': 'Listening & Reading: ',
