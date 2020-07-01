@@ -205,7 +205,11 @@ class Table extends Component {
                 method: 'DELETE',
             })))
             .then((res) => {
-                toast.success('Xóa thành công!', { position: toast.POSITION.TOP_CENTER, autoClose: 2000 })
+                toast.success(<Translation>
+                    {
+                        t => <span>{t("info-delete")}</span>
+                    }
+                </Translation>, { position: toast.POSITION.TOP_CENTER, autoClose: 2000 })
                 fetch(`${APP_DOMAIN}/students?page=${currentPage}&limit=${pageSize}`)
                     .then(response => response.json())
                     .then(data => {
