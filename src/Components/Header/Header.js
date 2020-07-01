@@ -87,6 +87,7 @@ class Header extends Component {
 
                     <div className="logo">
                         <img className='img-logo' src={hat} alt="" />
+                        <div className='my-app'>My app</div>
                     </div>
                     <div className="link-page">
                         <Menu onClick={this.handleClickMenu} selectedKeys={[pathName]} mode="horizontal">

@@ -137,7 +137,11 @@ class EditStudent extends Component {
                     if (getListStudents && typeof getListStudents == 'function') {
                         getListStudents(currentPage, pageSize)
                     }
-                    toast.success('Thêm thành công!', { position: toast.POSITION.TOP_CENTER, autoClose: 2000 })
+                    toast.success(<Translation>
+                        {
+                            t => <span>{t("edited")}</span>
+                        }
+                    </Translation>, { position: toast.POSITION.TOP_CENTER, autoClose: 2000 })
 
 
                 })

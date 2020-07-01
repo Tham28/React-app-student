@@ -130,7 +130,11 @@ class AddStudent extends Component {
                 if (getListStudents && typeof getListStudents == 'function') {
                     getListStudents(currentPage, pageSize)
                 }
-                toast.success('Thêm thành công!', { position: toast.POSITION.TOP_CENTER, autoClose: 2000 })
+                toast.success(<Translation>
+                    {
+                        t => <span>{t("successful")}</span>
+                    }
+                </Translation>, { position: toast.POSITION.TOP_CENTER, autoClose: 2000 })
                 this.setInput()
 
             })

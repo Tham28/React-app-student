@@ -33,15 +33,22 @@
                 width: unset;
             }
             .img-logo {
-                width: 47px;
+                width: 44px;
                 padding: 15px;
                 padding-left: 0;
+                @media screen and (min-width: 992px) {
+                    width: 47px;
+                }
             }
-            .manage {
-                font-size: 22px;
+            .my-app {
+                font-size: 17px;
                 font-weight: bold;
                 text-transform: uppercase;
                 color: rgb(4, 80, 116);
+                @media screen and (min-width: 992px) {
+                    font-size: 22px;
+                    font-weight: bold;
+                }
             }
         }
         .title {

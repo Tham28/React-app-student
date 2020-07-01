@@ -18,10 +18,7 @@ import { toast } from 'react-toastify';
 
 
 import i18n from '../../i18n'
-
 import { Translation } from 'react-i18next';
-
-
 
 
 toast.configure()
@@ -360,7 +357,7 @@ class Table extends Component {
                             </BtnDelete>
                         }
                     </div>
-                    <div className='table-section'>
+                   
                         <table className='listStudent' cellspacing="0" cellpadding="0">
                             <thead>
                                 <tr>
@@ -448,7 +445,7 @@ class Table extends Component {
 
                             </tbody>
                         </table>
-                    </div>
+                   
 
                     {
                         (this.state.listStudent.length === 0) &&
