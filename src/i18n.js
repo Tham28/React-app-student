@@ -97,6 +97,9 @@ const resources = {
       'education': 'Học vấn',
 
 
+
+      
+      "demo": "abcxyz"
       }
   }
 };
