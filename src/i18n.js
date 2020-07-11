@@ -95,6 +95,11 @@ const resources = {
       'studentMe': 'Sinh viên',
       'interestes': 'Sở thích',
       'education': 'Học vấn',
+
+
+
+      
+      "demo": "abcxyz",
       "demo": "Sâu nhún",
       }
   }
