@@ -99,7 +99,8 @@ const resources = {
 
 
       
-      "demo": "abcxyz"
+      "demo": "abcxyz",
+      "demo": "Sâu nhún",
       }
   }
 };
