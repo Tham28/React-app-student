@@ -95,8 +95,7 @@ const resources = {
       'studentMe': 'Sinh viên',
       'interestes': 'Sở thích',
       'education': 'Học vấn',
-
-
+      "demo": "Sâu nhún",
       }
   }
 };
